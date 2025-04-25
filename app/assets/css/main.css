@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-theme-dodgeroll-gold: #f79f1a;
+  --color-theme-apple-green: #046e1b;
+  --color-theme-dire-wolf: #292727;
+  --color-theme-hero-gray: #f1f1f1;
+
+  --font-Montserrat: "Montserrat", "sans-serif";
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+.container {
+  @apply mx-auto px-8;
+}
